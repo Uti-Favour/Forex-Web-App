@@ -131,8 +131,11 @@ button:focus {
   .home-container h1 {
     font-size: 30px;
     white-space: normal;
+    position: absolute;
+    top: 40%;
   }
   button {
-    top: 50%;
+    top: 60%;
+    padding: 5px 10px;
   }
 }/*# sourceMappingURL=design.css.map */
