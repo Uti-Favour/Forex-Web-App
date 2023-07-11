@@ -40,13 +40,11 @@ body {
   display: flex;
   align-items: center;
 }
-
 .right-links img {
   width: 50px;
   margin-left: 20px;
   cursor: pointer;
 }
-
 .right-links a {
   text-decoration: none;
   color: white;
@@ -64,7 +62,6 @@ body {
   margin: 30px 0;
   font-size: 36px;
 }
-
 .menu-links a::after {
   content: "";
   width: 40px;
@@ -74,11 +71,9 @@ body {
   margin-left: 10px;
   margin-bottom: 5px;
 }
-
 .menu-links a:hover {
   font-weight: 700;
 }
-
 .menu-links a:hover::after {
   display: inline-block;
 }
@@ -90,7 +85,6 @@ body {
   z-index: -1;
   overflow: hidden;
 }
-
 #background-video video {
   width: 100%;
   height: auto;
@@ -100,7 +94,6 @@ body {
   transform: translateY(0);
   transition: transform 0.3s ease-out;
 }
-
 #background-video::before {
   content: "";
   position: absolute;
@@ -122,7 +115,6 @@ body {
   align-items: center;
   background: black;
 }
-
 .home-container h1 {
   font-family: Arial;
   font-weight: 800;
@@ -145,20 +137,6 @@ button {
   position: absolute;
   top: 65%;
 }
-
-/* Animation */
-@keyframes moveUpDown {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-/* Remove default button styles */
 button:focus {
   outline: none;
 }
@@ -172,7 +150,6 @@ button:focus {
   border-radius: 4px;
   cursor: pointer;
 }
-
 .arrow-button i {
   margin-right: 5px;
 }
@@ -182,11 +159,9 @@ button:focus {
   top: 93%;
   bottom: 0;
   left: 0;
-  width: 100%; /* Add width to occupy the full width */
-  z-index: 1; /* Increase z-index to be above the background */
+  width: 100%;
+  z-index: 1;
 }
-
-/* Add this CSS to style the trading widget */
 .tradingview-widget-container__widget {
   width: 100%;
   height: 100%;
@@ -207,5 +182,60 @@ button:focus {
   button {
     top: 60%;
     padding: 5px 10px;
+  }
+}
+/* FAQ */
+.accordion {
+  margin: 60px auto;
+  width: 800pX;
+}
+.accordion li {
+  list-style: none;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.accordion li label {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.accordion li label::before {
+  content: "+";
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.accordion li input[type=radio] {
+  display: none;
+}
+.accordion li .content {
+  color: #555;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+.accordion li input[type=radio]:checked + label + .content {
+  max-height: 400px;
+  padding: 10px 10px 20px;
+}
+.accordion li input[type=radio]:checked + label::before {
+  content: "-";
+}
+
+@media screen and (max-width: 600px) {
+  .accordion {
+    width: 300px;
+    margin: 15px auto;
+    position: absolute;
+    top: 110%;
   }
 }/*# sourceMappingURL=design.css.map */
