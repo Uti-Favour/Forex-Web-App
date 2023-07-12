@@ -1,5 +1,4 @@
 /* Default styles */
-
 * {
   margin: 0;
   padding: 0;
@@ -14,16 +13,17 @@ body {
   margin: 0;
   padding: 0;
 }
-.menu-icon{
+
+.menu-icon {
   width: 35px;
   position: absolute;
   top: 5%;
   right: 10%;
   cursor: pointer;
   z-index: 5;
-
 }
-.menu-box{
+
+.menu-box {
   width: 80%;
   background: #242449;
   position: absolute;
@@ -32,48 +32,57 @@ body {
   padding: 50px 100px;
   transition: top 1s;
 }
-.right-links{
+
+.right-links {
   position: absolute;
   top: 30px;
   right: 30px;
   display: flex;
   align-items: center;
-}
-.right-links img{
-  width: 50px;
-  margin-left: 20px;
-  cursor: pointer;
-}
-.right-links a{
-  text-decoration: none;
-  color: white;
-  background: #f92537;
-  padding: 15px 40px;
-  border-radius: 30px;
-}
-.menu-links a{
-text-decoration: none;
-color: white;
-display: block;
-width: fit-content;
-margin: 30px 0;
-font-size: 36px;
-}
-.menu-links a::after{
-  content: '';
-  width: 40px;
-  height: 5px;
-  background: #f92537;
-  display: none;
-  margin-left: 10px ;
-  margin-bottom: 5px;
-}
-.menu-links a:hover{
-font-weight: 700;
 
+  img {
+    width: 50px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    background: #f92537;
+    padding: 15px 40px;
+    border-radius: 30px;
+  }
 }
-.menu-links a:hover::after{
-  display: inline-block;
+
+.menu-links {
+  a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 30px 0;
+    font-size: 36px;
+
+    &::after {
+      content: "";
+      width: 40px;
+      height: 5px;
+      background: #f92537;
+      display: none;
+      margin-left: 10px;
+      margin-bottom: 5px;
+    }
+
+    &:hover {
+      font-weight: 700;
+
+      &::after {
+        display: inline-block;
+      }
+    }
+  }
 }
 
 #background-video {
@@ -82,28 +91,27 @@ font-weight: 700;
   height: 100vh;
   z-index: -1;
   overflow: hidden;
-}
 
-#background-video video {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateY(0);
-  transition: transform 0.3s ease-out;
-}
+  video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+    transition: transform 0.3s ease-out;
+  }
 
-#background-video::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 1) !important;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0) !important;
+  }
 }
-
 
 .home-container {
   width: 100%;
@@ -115,17 +123,18 @@ font-weight: 700;
   display: flex;
   align-items: center;
   background: black;
+
+  h1 {
+    font-family: Arial;
+    font-weight: 800;
+    font-size: 80px;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    white-space: nowrap;
+  }
 }
 
-.home-container h1 {
-  font-family: Arial;
-  font-weight: 800;
-  font-size: 80px;
-  text-align: center;
-  position: absolute;
-  top: 25%;
-  white-space: nowrap;
-}
 button {
   padding: 15px 30px;
   font-size: 18px;
@@ -137,24 +146,12 @@ button {
   animation: moveUpDown 2s infinite;
   position: absolute;
   top: 65%;
-}
-/* Animation */
-@keyframes moveUpDown {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
+
+  &:focus {
+    outline: none;
   }
 }
 
-/* Remove default button styles */
-button:focus {
-  outline: none;
-}
 .arrow-button {
   padding: 10px 20px;
   font-size: 18px;
@@ -163,10 +160,10 @@ button:focus {
   border: 2px solid #ffffff;
   border-radius: 4px;
   cursor: pointer;
-}
 
-.arrow-button i {
-  margin-right: 5px;
+  i {
+    margin-right: 5px;
+  }
 }
 
 .tradingview-widget-container {
@@ -174,14 +171,13 @@ button:focus {
   top: 93%;
   bottom: 0;
   left: 0;
-  width: 100%; /* Add width to occupy the full width */
-  z-index: 1; /* Increase z-index to be above the background */
-}
-
-/* Add this CSS to style the trading widget */
-.tradingview-widget-container__widget {
   width: 100%;
-  height: 100%;
+  z-index: 1;
+
+  &__widget {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /* Media query for screens with a maximum width of 600px */
@@ -203,4 +199,67 @@ button:focus {
     padding: 5px 10px;
   }
 }
-// ----------------------second page-------------------------------------
+
+/* FAQ */
+.accordion {
+  margin: 60px auto;
+  width: 800pX;
+
+  li {
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+      -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+
+    label {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      font-size: 18px;
+      font-weight: 500;
+      cursor: pointer;
+
+      &::before {
+        content: '+';
+        margin-right: 10px;
+        font-size: 24px;
+        font-weight: 600;
+      }
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    .content {
+      color: #555;
+      padding: 0 10px;
+      line-height: 26px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s, padding 0.5s;
+    }
+
+    input[type="radio"]:checked + label + .content {
+      max-height: 400px;
+      padding: 10px 10px 20px;
+    }
+
+    input[type="radio"]:checked + label::before {
+      content: '-';
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .accordion {
+    width: 300px;
+    margin: 15px auto;
+    position: absolute;
+    top: 110%;
+  }
+}
