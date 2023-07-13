@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Quantum Leap Finance</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="design.css">
@@ -52,12 +53,8 @@
       });
     });
   </script>
-  
-  <div id="background-video">
-    <video autoplay loop muted>
-      <source src="videos/Concept.mp4" type="video/mp4">
-      <!-- Additional sources for browser compatibility -->
-    </video>
+
+
     <img src="images/menu.png" class="menu-icon" alt="menu-icon">
       
 <div class="home-container">
@@ -98,5 +95,64 @@
     </script>
   </div>
   <!-- TradingView Widget END -->
+
+
+  <!-- -----------------------------------live chart----------------------- -->
+ <!-- TradingView Widget BEGIN -->
+<div class="live-chart">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+  {
+  "symbols": [
+    [
+      "Apple",
+      "AAPL|1D"
+    ],
+    [
+      "Google",
+      "GOOGL|1D"
+    ],
+    [
+      "Microsoft",
+      "MSFT|1D"
+    ]
+  ],
+  "chartOnly": false,
+  "width": 1350,
+  "height": "700",
+  "locale": "en",
+  "colorTheme": "dark",
+  "autosize": false,
+  "showVolume": false,
+  "showMA": false,
+  "hideDateRanges": false,
+  "hideMarketStatus": false,
+  "hideSymbolLogo": false,
+  "scalePosition": "right",
+  "scaleMode": "Normal",
+  "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+  "fontSize": "10",
+  "noTimeScale": false,
+  "valuesTracking": "1",
+  "changeMode": "price-and-percent",
+  "chartType": "area",
+  "maLineColor": "#2962FF",
+  "maLineWidth": 1,
+  "maLength": 9,
+  "lineWidth": 2,
+  "lineType": 0,
+  "dateRanges": [
+    "1d|1",
+    "1m|30",
+    "3m|60",
+    "12m|1D",
+    "60m|1W",
+    "all|1M"
+  ]
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
 </body>
 </html>
