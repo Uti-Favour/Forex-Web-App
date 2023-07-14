@@ -1,193 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Quantum Leap Finance</title>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="design.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-</head>
-<body>
+    <link rel="stylesheet" href="design.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <div class="main-container">
+      <img
+        src="images/menu.png"
+        class="menu-icon"
+        onclick="openmenu()"
+        alt="menu"
+      />
+      <div class="menu-box" id="menu">
+        <div class="right-links">
+          <a href="#">Get Started</a>
+        </div>
+        <div class="menu-links">
+          <a href="#">Home</a>
+          <a href="#">Explore</a>
+          <a href="#">Features</a>
+          <a href="#">Offers</a>
+          <a href="#">About</a>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var menu = document.getElementById("menu");
+          var menuIcon = document.querySelector(".menu-icon");
 
-  <div class="main-container">
-  <img src="images/menu.png" class="menu-icon" onclick="openmenu()" alt="menu">
-  <div class="menu-box" id="menu">
-    <div class="right-links">
-      <a href="#">Get Started</a>
-    </div>
-    <div class="menu-links">
-      <a href="#">Home</a>
-      <a href="#">Explore</a>
-      <a href="#">Features</a>
-      <a href="#">Offers</a>
-      <a href="#">About</a>
-    </div>
-  </div>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var menu = document.getElementById('menu');
-      var menuIcon = document.querySelector('.menu-icon');
-  
-      function closeMenu() {
-        menu.style.top = "-100vh";
-      }
-  
-      function openMenu() {
-        menu.style.top = "17%";
-      }
-  
-      // Close the menu initially
-      closeMenu();
-  
-      // Add click event listener to menu icon
-      menuIcon.addEventListener('click', function() {
-        if (menu.style.top === "-100vh") {
-          openMenu();
-        } else {
+          function closeMenu() {
+            menu.style.top = "-100vh";
+          }
+
+          function openMenu() {
+            menu.style.top = "17%";
+          }
+
+          // Close the menu initially
           closeMenu();
+
+          // Add click event listener to menu icon
+          menuIcon.addEventListener("click", function () {
+            if (menu.style.top === "-100vh") {
+              openMenu();
+            } else {
+              closeMenu();
+            }
+          });
+        });
+      </script>
+
+      <img src="images/menu.png" class="menu-icon" alt="menu-icon" />
+
+      <div class="home-container">
+        <h1>
+          Where the world does<br />
+          markets
+        </h1>
+        <button class="arrow-button">
+          EXPLORE <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- -----------------------------Second Page News--------------------------------------- -->
+    <div class="news-container">
+      <h1>
+        Get The Latest on-time<br /><span class="middle">News</span> Updates
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+        Veniam est modi libero distinctio delectus and the tnx <br />
+        ullam, aspernatur temporibus expedita exactly goodb <br />
+        odio earum magnam, dicta dolores trial and i say.<br />
+        sint doloribus excepturi?
+      </p>
+      <button class="btn-1">Read More</button>
+    </div>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright"></div>
+      <script
+        type="text/javascript"
+        src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js"
+        async
+      >
+          {
+          "feedMode": "all_symbols",
+          "colorTheme": "light",
+          "isTransparent": false,
+          "displayMode": "regular",
+          "width": 480,
+          "height": 560,
+          "locale": "en"
         }
-      });
-    });
-  </script>
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
 
+    <!-- -----------------------------------live chart----------------------- -->
+    <!-- TradingView Widget BEGIN -->
+    <div class="live-chart">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright"></div>
+      <script
+        type="text/javascript"
+        src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js"
+        async
+      >
+          {
+          "symbols": [
+            [
+              "Apple",
+              "AAPL|1D"
+            ],
+            [
+              "Google",
+              "GOOGL|1D"
+            ],
+            [
+              "Microsoft",
+              "MSFT|1D"
+            ]
+          ],
+          "chartOnly": false,
+          "width": 1350,
+          "height": "700",
+          "locale": "en",
+          "colorTheme": "light",
+          "autosize": false,
+          "showVolume": false,
+          "showMA": false,
+          "hideDateRanges": false,
+          "hideMarketStatus": false,
+          "hideSymbolLogo": false,
+          "scalePosition": "right",
+          "scaleMode": "Normal",
+          "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+          "fontSize": "10",
+          "noTimeScale": false,
+          "valuesTracking": "1",
+          "changeMode": "price-and-percent",
+          "chartType": "area",
+          "maLineColor": "#2962FF",
+          "maLineWidth": 1,
+          "maLength": 9,
+          "lineWidth": 2,
+          "lineType": 0,
+          "dateRanges": [
+            "1d|1",
+            "1m|30",
+            "3m|60",
+            "12m|1D",
+            "60m|1W",
+            "all|1M"
+          ]
+        }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
 
-    <img src="images/menu.png" class="menu-icon" alt="menu-icon">
-      
-<div class="home-container">
-    <h1>Where the world does<br>
-         markets</h1>
-         <button class="arrow-button">EXPLORE <i class="fas fa-arrow-right"></i></button>
- 
-   
-</div>
-</div>
+    <!-- -------------------number---------------------------- -->
+    <div class="num-container">
+      <h1>
+        Experience the Unstoppable<br />
+        of Quantum Leap Hedge Fund
+      </h1>
 
-  
-<!-- -----------------------------Second Page News--------------------------------------- -->
-<div class="news-container">
-        
-  <h1>Get The Latest on-time<br><span class="middle">News</span> Updates</h1>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-        Veniam est modi libero distinctio delectus and the tnx  <br>
-        ullam, aspernatur temporibus expedita exactly goodb <br>
-        odio earum magnam, dicta dolores trial and i say.<br>
-         sint doloribus excepturi?</p>
-         <button class="btn-1">Read More</button>
-</div>
-  <!-- TradingView Widget BEGIN -->
-  <div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    <div class="tradingview-widget-copyright"></div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
-    {
-    "feedMode": "all_symbols",
-    "colorTheme": "light",
-    "isTransparent": false,
-    "displayMode": "regular",
-    "width": 480,
-    "height": 560,
-    "locale": "en"
-  }
-    </script>
-  </div>
-  <!-- TradingView Widget END -->
+      <p>
+        Our relentless pursuit of excellence is evident in our remarkable track
+        record of consistently outperforming the market. Through diligent
+        research, strategic investments, and meticulous risk management, we have
+        delivered exceptional returns to our valued investors. We believe in
+        transparency and keeping our clients informed, which is why we have
+        introduced our innovative Auto Number Count feature.
+      </p>
 
-
-  <!-- -----------------------------------live chart----------------------- -->
- <!-- TradingView Widget BEGIN -->
-<div class="live-chart">
-  <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
-  {
-  "symbols": [
-    [
-      "Apple",
-      "AAPL|1D"
-    ],
-    [
-      "Google",
-      "GOOGL|1D"
-    ],
-    [
-      "Microsoft",
-      "MSFT|1D"
-    ]
-  ],
-  "chartOnly": false,
-  "width": 1350,
-  "height": "700",
-  "locale": "en",
-  "colorTheme": "light",
-  "autosize": false,
-  "showVolume": false,
-  "showMA": false,
-  "hideDateRanges": false,
-  "hideMarketStatus": false,
-  "hideSymbolLogo": false,
-  "scalePosition": "right",
-  "scaleMode": "Normal",
-  "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
-  "fontSize": "10",
-  "noTimeScale": false,
-  "valuesTracking": "1",
-  "changeMode": "price-and-percent",
-  "chartType": "area",
-  "maLineColor": "#2962FF",
-  "maLineWidth": 1,
-  "maLength": 9,
-  "lineWidth": 2,
-  "lineType": 0,
-  "dateRanges": [
-    "1d|1",
-    "1m|30",
-    "3m|60",
-    "12m|1D",
-    "60m|1W",
-    "all|1M"
-  ]
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
-
-
-<!-- -------------------number---------------------------- -->
-<div class="num-container">
-  <h1>Experience the Unstoppable<br>
-     of Quantum Leap Hedge Fund</h1>
-
-     <p>Our relentless pursuit of excellence is evident in our remarkable track record of consistently outperforming the market. Through diligent research, strategic investments, and meticulous risk management, we have delivered exceptional returns to our valued investors. We believe in transparency and keeping our clients informed, which is why we have introduced our innovative Auto Number Count feature.</p>
-
-
-     
-
-
-
-     <section>
-      <!-- single number -->
-      <article>
-        <span class="number" data-value="500">0</span>
-        <p>Succeeded Projects</p>
-      </article>
-      <!-- end of single number -->
-      <!-- single number -->
-      <article>
-        <span class="number" data-value="17140">0</span>
-        <p>Working Hours Spent</p>
-      </article>
-      <!-- end of single number -->
-      <!-- single number -->
-      <article>
-        <span class="number" data-value="1500">0</span>
-        <p>Happy Clients</p>
-      </article>
-      <!-- end of single number -->
-    </section>
-</div>
-</body>
+      <section>
+        <!-- single number -->
+        <article>
+          <span class="number" data-value="500">0</span>
+          <p>Succeeded Projects</p>
+        </article>
+        <!-- end of single number -->
+        <!-- single number -->
+        <article>
+          <span class="number" data-value="17140">0</span>
+          <p>Working Hours Spent</p>
+        </article>
+        <!-- end of single number -->
+        <!-- single number -->
+        <article>
+          <span class="number" data-value="1500">0</span>
+          <p>Happy Clients</p>
+        </article>
+        <!-- end of single number -->
+      </section>
+    </div>
+  </body>
 </html>

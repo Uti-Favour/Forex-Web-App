@@ -81,31 +81,25 @@ body {
   }
 }
 
-
-
 .home-container {
   width: 100%;
   height: 100vh;
   background-image: url(images/stocks.jpeg);
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
   background-position: center;
   background-size: cover;
   padding: 0 7%;
-
- 
 }
-.home-container h1{
-    font-family:sans-serif;
-    font-weight: 800;
-    font-size: 90px;
-    text-align: center;
-    position: absolute;
-    top: 25%;
-    color: white;
-    justify-content: center;
-  
-  
+.home-container h1 {
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 90px;
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  color: white;
+  justify-content: center;
 }
 
 button {
@@ -175,30 +169,28 @@ button {
 }
 
 // --------------------------News----------------------------------------
-.news-container{
+.news-container {
   margin: 8%;
   width: 100%;
   height: 100vh;
   position: absolute;
   top: calc(115vh);
 }
- .news-container h1{
+.news-container h1 {
   font-weight: 800;
   margin-bottom: 30px;
   font-size: 45px;
   font-family: sans-serif;
-
 }
-.news-container p{
-  line-height: 1.50;
+.news-container p {
+  line-height: 1.5;
   font-size: 19px;
   color: gray;
-
 }
-.middle{
+.middle {
   color: blue;
 }
-.btn-1{
+.btn-1 {
   padding: 20px 40px;
   border-radius: 30px;
   outline: none;
@@ -210,36 +202,33 @@ button {
   position: absolute;
   top: 50%;
 }
-@media screen and (max-width: 600px){
-  h1{
-      font-size: 30px;
-      font-weight: 600;
-      margin-bottom: 25px;
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 25px;
   }
-  p{
-      font-size: 14px;
-      line-height: 1.5;
-      font-weight: 500;
-
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
   }
-  button{
-      padding: 10px 20px;
-      font-weight: 200;
-      margin-top: 25px;
+  button {
+    padding: 10px 20px;
+    font-weight: 200;
+    margin-top: 25px;
   }
-  
 }
 
-.tradingview-widget-container{
+.tradingview-widget-container {
   position: absolute;
   left: 55%;
   top: calc(130vh);
-
 }
 
 // ------------------------live trading widget---------------------------
 
-.live-chart{
+.live-chart {
   position: absolute;
   top: 150%;
   width: 100%;
@@ -271,7 +260,7 @@ button {
 .num-container p {
   justify-content: center;
   text-align: center;
-  line-height: 1.50;
+  line-height: 1.5;
   color: gray;
   margin-top: 40px;
   text-transform: capitalize;
@@ -280,10 +269,6 @@ button {
   margin-left: auto; /* Add this line */
   margin-right: auto; /* Add this line */
 }
-
-
-
-
 
 section {
   padding: 5rem 0;
@@ -347,4 +332,3 @@ article:nth-of-type(2) {
 article:nth-of-type(3) {
   border-bottom-color: #a855f7;
 }
-
