@@ -365,12 +365,80 @@ body{
   height: 100vh;
 }
 
+// ================================features==================================
+.box-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  position: absolute;
+  top: 380%;
+}
+
+.box-container p {
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.service {
+  text-align: left;
+  padding: 110px 30px; /* Increase the height of each service box */
+  border-radius: 5px;
+  font-size: 16px; /* Adjust the font size for h2 and p */
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: transform 0.5s, box-shadow 0.5s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service i {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #303ef7;
+}
+
+.service h2 {
+  margin-bottom: 20px;
+  font-size: 30px; /* Adjust the font size for h2 */
+  font-weight: 600;
+}
+
+.service p {
+  font-size: 14px; /* Adjust the font size for p */
+  text-align: left;
+  margin-top: 30px;
+}
+
+.service:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service:hover .learn {
+  color: #313de4;
+}
+
+.service .learn {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+  position: relative;
+  top: 50px;
+}
+
 // ----------------------number-------------------------
 .num-container {
   width: 100%;
   height: 100vh;
   position: absolute;
-  top: 380%;
+  top: 90%;
 }
 
 .num-container h1 {
@@ -465,7 +533,7 @@ article:nth-of-type(3) {
 
 
 
-// ==========================Newsletter=========================
+// ==========================Newsletter==========================
 
 .letter-content {
   text-align: center;
@@ -474,7 +542,7 @@ article:nth-of-type(3) {
   width: 100%;
   margin-top: 200px;
   position: absolute;
-  top: 480%;
+  top: 380%;
 }
 
 .letter-content h1 {
