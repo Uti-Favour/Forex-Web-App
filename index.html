@@ -1,531 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Quantum Leap Finance</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="design.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="script.js">
+</head>
+<body>
     <div class="main-container">
-      <img
-        src="images/menu.png"
-        class="menu-icon"
-        onclick="openmenu()"
-        alt="menu"
-      />
-      <div class="menu-box" id="menu">
-        <div class="right-links">
-          <a href="#">Get Started</a>
+        <div class="text">
+            <h1>Advanced Africa Trading and<br>
+                <span> Hedge Fund Platfrom</span></h1>
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit adipisicing elit.<br>
+                     Vel alias doloribus reprehenderit aut minima soluta adipisicing elit<br>
+                     exercitationem similique! Iste, adipisicing elit totam sed amet?
+                    </p>
         </div>
-        <div class="menu-links">
-          <a href="#">Home</a>
-          <a href="#">Explore</a>
-          <a href="#">Features</a>
-          <a href="#">Offers</a>
-          <a href="#">About</a>
-        </div>
-      </div>
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          var menu = document.getElementById("menu");
-          var menuIcon = document.querySelector(".menu-icon");
 
-          function closeMenu() {
-            menu.style.top = "-100vh";
-          }
+        <button class="btn-1">Join Us      <i class="fa fa-arrow-right" aria-hidden="true"></i>
 
-          function openMenu() {
-            menu.style.top = "17%";
-          }
-
-          // Close the menu initially
-          closeMenu();
-
-          // Add click event listener to menu icon
-          menuIcon.addEventListener("click", function () {
-            if (menu.style.top === "-100vh") {
-              openMenu();
-            } else {
-              closeMenu();
-            }
-          });
-        });
-      </script>
-
-      <img src="images/menu.png" class="menu-icon" alt="menu-icon" />
-
-      <div class="home-container">
-        <h1>
-          Where the world does<br />
-          markets
-        </h1>
-        <button class="arrow-button">
-          EXPLORE <i class="fas fa-arrow-right"></i>
         </button>
-      </div>
-    </div>
 
-   <!-- -----------------------------Second Page News--------------------------------------- -->
-<div class="news-container">
-        
-  <h1>Get The Latest on-time<br><span>News</span> Updatse</h1>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-        Veniam est modi libero distinctio delectus and the tnx  <br>
-        ullam, aspernatur temporibus expedita exactly goodb <br>
-        odio earum magnam, dicta dolores trial and i say.<br>
-         sint doloribus excepturi?</p>
-         <button class="btn-1">Read More</button>
-</div>
-  <!-- TradingView Widget BEGIN -->
-  <div class="tradingview-widget-container">
+        <img src="image/all-3.jpg" alt="" class="img-1">
+
+       
+
+    </div>
+     <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
     <div class="tradingview-widget-container__widget"></div>
     <div class="tradingview-widget-copyright"></div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
     {
-    "feedMode": "all_symbols",
+    "symbols": [
+      {
+        "proName": "FOREXCOM:SPXUSD",
+        "title": "S&P 500"
+      },
+      {
+        "proName": "FOREXCOM:NSXUSD",
+        "title": "US 100"
+      },
+      {
+        "proName": "FX_IDC:EURUSD",
+        "title": "EUR to USD"
+      },
+      {
+        "proName": "BITSTAMP:BTCUSD",
+        "title": "Bitcoin"
+      },
+      {
+        "proName": "BITSTAMP:ETHUSD",
+        "title": "Ethereum"
+      }
+    ],
+    "showSymbolLogo": true,
     "colorTheme": "light",
     "isTransparent": false,
-    "displayMode": "regular",
-    "width": 480,
-    "height": 560,
+    "displayMode": "adaptive",
     "locale": "en"
   }
     </script>
   </div>
   <!-- TradingView Widget END -->
 
- <!-- ----------------------------------blog----------------------------------- - -->
-
-
- <!--blog-section============================================================================-->
- <section id="blog">
-  <!--blog-heading--------------->
-  <div class="blog-heading">
-    <h3>My Blog</h3>
-  </div>
-
-
-  <!--container---------------->
-  <div class="blog-container">
-
-    <!--box-1------------->
-    <div class="blog-box">
-
-      <!--img---->
-      <div class="blog-img">
-        <img src="images/stocks.jpeg" alt="blog">
-      </div>
-      <!--text--->
-      <div class="blog-text">
-        <span>18 July 2021 / Web Design</span>
-        <a href="#" class="blog-title">What Has Happened to All of the Web Design Ideas?</a>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
-        <a href="#">Read More</a>
-      </div>
-
-    </div>
 
 
 
+  <!-- =============================Service============================ -->
 
-    <!--box-2------------->
-    <div class="blog-box">
-
-      <!--img---->
-      <div class="blog-img">
-        <img src="images/Quantum leap finance.jpg" alt="blog">
-      </div>
-      <!--text--->
-      <div class="blog-text">
-        <span>18 July 2021 / Web Design</span>
-        <a href="#" class="blog-title">What Has Happened to All of the Web Design Ideas?</a>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
-        <a href="#">Read More</a>
-      </div>
-
-    </div>
-
-
-
-
-    <!--box-3------------->
-    <div class="blog-box">
-
-      <!--img---->
-      <div class="blog-img">
-        <img src="images/Long term chart.jpeg" alt="blog">
-      </div>
-      <!--text--->
-      <div class="blog-text">
-        <span>18 July 2021 / Web Design</span>
-        <a href="#" class="blog-title">What Has Happened to All of the Web Design Ideas?</a>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
-        <a href="#">Read More</a>
-      </div>
-
-    </div>
-
-    <!--box-4------------->
-    <div class="blog-box">
-
-      <!--img---->
-      <div class="blog-img">
-        <img src="images/update.jpg" alt="blog">
-      </div>
-      <!--text--->
-      <div class="blog-text">
-        <span>18 July 2021 / Web Design</span>
-        <a href="#" class="blog-title">What Has Happened to All of the Web Design Ideas?</a>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
-        <a href="#">Read More</a>
-      </div>
-
-    </div>
-
-
-    <!--box-5------------->
-    <div class="blog-box">
-
-      <!--img---->
-      <div class="blog-img">
-        <img src="images/pic-ture.jpg" alt="blog">
-      </div>
-      <!--text--->
-      <div class="blog-text">
-        <span>18 July 2021 / Web Design</span>
-        <a href="#" class="blog-title">What Has Happened to All of the Web Design Ideas?</a>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
-        <a href="#">Read More</a>
-      </div>
-
-    </div>
-
-
-    <!--box-6------------->
-    <div class="blog-box">
-
-      <!--img---->
-      <div class="blog-img">
-        <img src="images/money.jpg" alt="blog">
-      </div>
-      <!--text--->
-      <div class="blog-text">
-        <span>18 July 2021 / Web Design</span>
-        <a href="#" class="blog-title">What Has Happened to All of the Web Design Ideas?</a>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
-        <a href="#">Read More</a>
-      </div>
-
-    </div>
-
-
-  </div>
-
-</section>
-    <!-- -----------------------------------live chart----------------------- -->
-    <!-- TradingView Widget BEGIN -->
-    <div class="live-chart">
-      <div class="tradingview-widget-container__widget"></div>
-      <div class="tradingview-widget-copyright"></div>
-      <script
-        type="text/javascript"
-        src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js"
-        async
-      >
-          {
-          "symbols": [
-            [
-              "Apple",
-              "AAPL|1D"
-            ],
-            [
-              "Google",
-              "GOOGL|1D"
-            ],
-            [
-              "Microsoft",
-              "MSFT|1D"
-            ]
-          ],
-          "chartOnly": false,
-          "width": 1350,
-          "height": "700",
-          "locale": "en",
-          "colorTheme": "light",
-          "autosize": false,
-          "showVolume": false,
-          "showMA": false,
-          "hideDateRanges": false,
-          "hideMarketStatus": false,
-          "hideSymbolLogo": false,
-          "scalePosition": "right",
-          "scaleMode": "Normal",
-          "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
-          "fontSize": "10",
-          "noTimeScale": false,
-          "valuesTracking": "1",
-          "changeMode": "price-and-percent",
-          "chartType": "area",
-          "maLineColor": "#2962FF",
-          "maLineWidth": 1,
-          "maLength": 9,
-          "lineWidth": 2,
-          "lineType": 0,
-          "dateRanges": [
-            "1d|1",
-            "1m|30",
-            "3m|60",
-            "12m|1D",
-            "60m|1W",
-            "all|1M"
-          ]
-        }
-      </script>
-    </div>
-    <!-- TradingView Widget END -->
-
-
-
-
-
-
-    <!-- ===================================Features=============================================== -->
-
-    <div class="box-container">
-      <div class="row">
-          <div class="service">
-              <i class="fas fa-laptop-code"></i>
-              <h2>Get Coinbase share CFDs*</h2>
-              <p>Lorem adipisicing.Lorem ipsum dolor sit 
-                  amet consectetur adipisicingLorem ipsum dolor sit 
-                  amet consectetur adipisicingLorem</p>
-                  <a href="#" class="learn">Learn More</a>
-          </div>
-          <div class="service">
-              <i class="fas fa-chart-line"></i>
-              <h2>MetaTrader platform and mobile app</h2>
-              <p>Lorem adipisicing.Lorem ipsum dolor sit 
-                  amet consectetur adipisicingLorem ipsum dolor sit 
-                  amet consectetur adipisicingLorem</p>
-                  <a href="#" class="learn">Learn More</a>
-          </div>
-          <div class="service">
-              <i class="fas fa-rocket"></i>
-              <h2>Account features and benefits</h2>
-              <p>Lorem adipisicing.Lorem ipsum dolor sit 
-                  amet consectetur adipisicingLorem ipsum dolor sit 
-                  amet consectetur adipisicingLorem </p>
-                  <a href="#" class="learn">Learn More</a>
-          </div>
-      </div>
-
-
-
-    <!-- -------------------number---------------------------- -->
-    <div class="num-container">
-      <h1>
-        Experience the Unstoppable<br />
-        of Quantum Leap Hedge Fund
-      </h1>
-
-      <p>
-        Our relentless pursuit of excellence is evident in our remarkable track
-        record of consistently outperforming the market. Through diligent
-        research, strategic investments, and meticulous risk management, we have
-        delivered exceptional returns to our valued investors. We believe in
-        transparency and keeping our clients informed, which is why we have
-        introduced our innovative Auto Number Count feature.
-      </p>
-
-      <section class="count">
-        <!-- single number -->
-        <article>
-          <span class="number" data-value="500">0</span>
-          <p>Succeeded Projects</p>
-        </article>
-        <!-- end of single number -->
-        <!-- single number -->
-        <article>
-          <span class="number" data-value="17140">0</span>
-          <p>Working Hours Spent</p>
-        </article>
-        <!-- end of single number -->
-        <!-- single number -->
-        <article>
-          <span class="number" data-value="1500">0</span>
-          <p>Happy Clients</p>
-        </article>
-        <!-- end of single number -->
-      </section>
-    </div>
-
-
-
-    <!--Testimonials------------------->
-  <section id="testimonials">
-    <div class="testimonial-box-container">
-        <!--BOX-1-------------->
-        <div class="testimonial-box">
-          <!--top------------------------->
-          <div class="box-top">
-            <!--profile----->
-            <div class="profile">
-              <!--img---->
-              <div class="profile-img">
-                <img src="images/c-1.jpg" alt="Profile Image of Touseeq Ijaz" />
-              </div>
-              <!--name-and-username-->
-              <div class="name-user">
-                <strong>Touseeq Ijaz</strong>
-                <span>@touseeqijazweb</span>
-              </div>
-            </div>
-            <!--reviews------>
-            <div class="reviews">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i><!--Empty star-->
-            </div>
-          </div>
-          <!--Comments---------------------------------------->
-          <div class="client-comment">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
-          </div>
+  <div class="box-container">
+    <h1>Our Services</h1>
+    <div class="row">
+        <div class="service">
+            <i class="fas fa-laptop-code"></i>
+            <h2>Get Coinbase share CFDs*</h2>
+            <p>Lorem adipisicing.Lorem ipsum dolor sit 
+                amet consectetur adipisicingLorem ipsum dolor sit 
+                amet consectetur adipisicingLorem</p>
+                <a href="#" class="learn">Learn More</a>
         </div>
-        
-        <!--BOX-2-------------->
-        <div class="testimonial-box">
-          <!--top------------------------->
-          <div class="box-top">
-            <!--profile----->
-            <div class="profile">
-              <!--img---->
-              <div class="profile-img">
-                <img src="images/c-2.jpg" alt="Profile Image of J.K. Rowling" />
-              </div>
-              <!--name-and-username-->
-              <div class="name-user">
-                <strong>J.K. Rowling</strong>
-                <span>@jkrowling</span>
-              </div>
-            </div>
-            <!--reviews------>
-            <div class="reviews">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i><!--Empty star-->
-            </div>
-          </div>
-          <!--Comments---------------------------------------->
-          <div class="client-comment">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
-          </div>
+        <div class="service">
+            <i class="fas fa-chart-line"></i>
+            <h2>MetaTrader platform and mobile app</h2>
+            <p>Lorem adipisicing.Lorem ipsum dolor sit 
+                amet consectetur adipisicingLorem ipsum dolor sit 
+                amet consectetur adipisicingLorem</p>
+                <a href="#" class="learn">Learn More</a>
         </div>
-        
-        <!--BOX-3-------------->
-        <div class="testimonial-box">
-          <!--top------------------------->
-          <div class="box-top">
-            <!--profile----->
-            <div class="profile">
-              <!--img---->
-              <div class="profile-img">
-                <img src="images/c-3.jpg" alt="Profile Image of Harry Potter" />
-              </div>
-              <!--name-and-username-->
-              <div class="name-user">
-                <strong>Harry Potter</strong>
-                <span>@DanielRedclief</span>
-              </div>
-            </div>
-            <!--reviews------>
-            <div class="reviews">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i><!--Empty star-->
-            </div>
-          </div>
-          <!--Comments---------------------------------------->
-          <div class="client-comment">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
-          </div>
+        <div class="service">
+            <i class="fas fa-rocket"></i>
+            <h2>Account features and benefits</h2>
+            <p>Lorem adipisicing.Lorem ipsum dolor sit 
+                amet consectetur adipisicingLorem ipsum dolor sit 
+                amet consectetur adipisicingLorem </p>
+                <a href="#" class="learn">Learn More</a>
         </div>
-        
-        <!--BOX-4-------------->
-        <div class="testimonial-box">
-          <!--top------------------------->
-          <div class="box-top">
-            <!--profile----->
-            <div class="profile">
-              <!--img---->
-              <div class="profile-img">
-                <img src="images/c-4.jpg" alt="Profile Image of Oliva" />
-              </div>
-              <!--name-and-username-->
-              <div class="name-user">
-                <strong>Oliva</strong>
-                <span>@Olivaadward</span>
-              </div>
-            </div>
-            <!--reviews------>
-            <div class="reviews">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i><!--Empty star-->
-            </div>
-          </div>
-          <!--Comments---------------------------------------->
-          <div class="client-comment">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
-          </div>
-        </div>
-      </div>
-      <!-- ... (rest of the code) ... -->
-      
-        </div>
-      </section>
+    </div>
 
 
-<!-- ==============================Newsletter=============================== -->
-<div class="letter-content">
-  <h1>Subscribe to our daily Newsletter</h1>
-  <p class="newsletter-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus quas odio quidem excepturi totam. Consequatur hic sit eligendi repellendus iste? dolor sit amet consectetur adipisicing elit. Natus quas odio quidem excepturi totam. Consequatur hicdolor sit amet consectetur adipisicing elit. Natus quas odio quidem excepturi totam. Consequatur hic?</p>
-  <div class="newsletter-section">
-      <input type="text" class="form" placeholder="your email here....">
-      <input type="button" value="Subscribe" class="form-btn">
-  </div>
-  <div class="social-icons">
-      <!-- Add your social media icons here (e.g., Font Awesome icons, SVG icons, etc.) -->
-      <!-- Example: -->
-      <i class="fab fa-facebook"></i> 
-      <i class="fab fa-twitter"></i> 
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-linkedin"></i>
-  </div>
-</div>
+    <!-- =========================info================================ -->
+    <div id="info">
+        <img src="image/pic-ture.jpg" alt="" class="img-2">
+
+
+        <div class="text-2">
+            <h2>Advanced Africa Trading and<br>
+               <span> Hedge Fund Platfrom</span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit adipisicing elit.<br>
+                    Vel alias doloribus reprehenderit aut minima soluta adipisicing elit<br>
+                    exercitationem similique! Iste, adipisicing elit totam sed amet?</p>
+                    <button class="btn-1">Learn More</button>
+        </div>
+    </div>
+
     
 
+    <!-- ===========================steps========================== -->
 
-<!-- ----faq----- -->
+ <!-- =============================Steps============================ -->
+ <div class="rows">
+  <div class="services">
+      <i class="fas fa-1"></i>
+      <h2>Get Coinbase share</h2>
+      <p>Lorem adipisicing.Lorem ipsum dolor sit 
+          amet consectetur adipisicingLorem ipsum dolor sit 
+          amet consectetur adipisicingLorem</p>
+          <a href="#" class="btn-step">Explore</a>
+  </div>
+  <div class="services">
+      <i class="fas fa-2"></i>
+      <h2>MetaTrader platform</h2>
+      <p>Lorem adipisicing.Lorem ipsum dolor sit 
+          amet consectetur adipisicingLorem ipsum dolor sit 
+          amet consectetur adipisicingLorem</p>
+          <a href="#" class="btn-step">Explore</a>
+  </div>
+  <div class="services">
+      <i class="fas fa-3"></i>
+      <h2>Account features</h2>
+      <p>Lorem adipisicing.Lorem ipsum dolor sit 
+          amet consectetur adipisicingLorem ipsum dolor sit 
+          amet consectetur adipisicingLorem </p>
+          <a href="#" class="btn-step">Explore</a>
+  </div>
+</div>
+
+
+<!-- -------------------number---------------------------- -->
+<div class="counter-container">
+
+  <h1> Experience the Unstoppable
+    of <br> <span>Quantum Leap Hedge</span>   Fund</h1>
+    <p>
+      Our relentless pursuit of excellence is evident in our remarkable track our time
+      record of consistently outperforming the market. Through  <br>diligent
+      research, strategic investments, and meticulous risk management, we have
+      delivered exceptional returns to our valued investors.<br> We believe in
+      transparency and keeping our clients informed, which is why we have
+      introduced our innovative.
+    </p>
+
+
+  <div class="counter-box">
+    <section class="count">
+      <!-- single number -->
+      <article>
+        <div class="counter" data-value="500">0</div>
+        <p>Succeeded Projects</p>
+      </article>
+      <!-- end of single number -->
+      <!-- single number -->
+      <article>
+        <div class="counter" data-value="17140">0</div>
+        <p>Working Hours Spent</p>
+      </article>
+      <!-- end of single number -->
+      <!-- single number -->
+      <article>
+        <div class="counter" data-value="1500">0</div>
+        <p>Happy Clients</p>
+      </article>
+      <!-- end of single number -->
+    </section>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const counters = [...document.querySelectorAll('.counter')];
+  
+    const updateCount = (el) => {
+      const value = parseInt(el.dataset.value);
+      const increment = Math.ceil(value / 1000);
+      let initialValue = 0;
+  
+      const increaseCount = setInterval(() => {
+        initialValue += increment;
+  
+        if (initialValue > value) {
+          el.textContent = `${value}+`;
+          clearInterval(increaseCount);
+          return;
+        }
+  
+        el.textContent = `${initialValue}+`;
+      }, 1);
+    };
+  
+    counters.forEach((counter) => {
+      updateCount(counter);
+    });
+  });
+  
+  </script>
+
+
+
+
+
+<!--Testimonials------------------->
+<section id="testimonials">
+  <div class="testimonial-box-container">
+      <!--BOX-1-------------->
+      <div class="testimonial-box">
+        <!--top------------------------->
+        <div class="box-top">
+          <!--profile----->
+          <div class="profile">
+            <!--img---->
+            <div class="profile-img">
+              <img src="image/peace.jpg" alt="Profile Image of Touseeq Ijaz" />
+            </div>
+            <!--name-and-username-->
+            <div class="name-user">
+              <strong>Uti Peace</strong>
+              <span>@utipeace</span>
+            </div>
+          </div>
+          <!--reviews------>
+          <div class="reviews">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i><!--Empty star-->
+          </div>
+        </div>
+        <!--Comments---------------------------------------->
+        <div class="client-comment">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+        </div>
+      </div>
+      
+      <!--BOX-2-------------->
+      <div class="testimonial-box">
+        <!--top------------------------->
+        <div class="box-top">
+          <!--profile----->
+          <div class="profile">
+            <!--img---->
+            <div class="profile-img">
+              <img src="image/fav.jpg" alt="Profile Image of J.K. Rowling" />
+            </div>
+            <!--name-and-username-->
+            <div class="name-user">
+              <strong>Uti Favour</strong>
+              <span>@utifavour</span>
+            </div>
+          </div>
+          <!--reviews------>
+          <div class="reviews">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><!--Empty star-->
+          </div>
+        </div>
+        <!--Comments---------------------------------------->
+        <div class="client-comment">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+        </div>
+      </div>
+      
+      <!--BOX-3-------------->
+      <div class="testimonial-box">
+        <!--top------------------------->
+        <div class="box-top">
+          <!--profile----->
+          <div class="profile">
+            <!--img---->
+            <div class="profile-img">
+              <img src="image/pic-1.jpg" alt="Profile Image of Harry Potter" />
+            </div>
+            <!--name-and-username-->
+            <div class="name-user">
+              <strong>Jewel Daniel</strong>
+              <span>@jeweldaniel</span>
+            </div>
+          </div>
+          <!--reviews------>
+          <div class="reviews">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i><!--Empty star-->
+          </div>
+        </div>
+        <!--Comments---------------------------------------->
+        <div class="client-comment">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+        </div>
+      </div>
+      
+      <!--BOX-4-------------->
+      <div class="testimonial-box">
+        <!--top------------------------->
+        <div class="box-top">
+          <!--profile----->
+          <div class="profile">
+            <!--img---->
+            <div class="profile-img">
+              <img src="image/Damyyyy.jpg" alt="Profile Image of Oliva" />
+            </div>
+            <!--name-and-username-->
+            <div class="name-user">
+              <strong>Ofoye Dami</strong>
+              <span>@ofoyedami</span>
+            </div>
+          </div>
+          <!--reviews------>
+          <div class="reviews">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i><!--Empty star-->
+          </div>
+        </div>
+        <!--Comments---------------------------------------->
+        <div class="client-comment">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+        </div>
+      </div>
+    </div>
+    
+      </div>
+    </section>
+
+
+
+
+ <!-- ----------------------------------Partners--------------------------------- -->
+   
+    
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+ 
+ <div class="container-slide">
+     <h1>OUR PARTNERS</h1>
+     <section class="customer-logos slider">
+         <div class="slide"><img src="image/adidas.png" alt="logo"></div>
+         <div class="slide"><img src="image/facebook.png" alt="logo"></div>
+         <div class="slide"><img src="image/google.png" alt="logo"></div>
+         <div class="slide"><img src="image/instagram.png" alt="logo"></div>
+         <div class="slide"><img src="image/nike.png" alt="logo"></div>
+         <div class="slide"><img src="image/twitter.png" alt="logo"></div>
+         <div class="slide"><img src="image/uber.png" alt="logo"></div>
+         <div class="slide"><img src="image/youtube.png" alt="logo"></div>
+     </section>
+ </div>
+
+ 
+
+ <script>
+ 
+ $(document).ready(function(){
+     $('.customer-logos').slick({
+         slidesToShow: 6,
+         slidesToScroll: 1,
+         autoplay: true,
+         autoplaySpeed: 1500,
+         arrows: false,
+         dots: false,
+         pauseOnHover:false,
+         responsive: [{
+             breakpoint: 768,
+             setting: {
+                 slidesToShow:4
+             }
+         }, {
+             breakpoint: 520,
+             setting: {
+                 slidesToShow: 3
+             }
+         }]
+     });
+ });
+
+ </script>
+
+
+
+
+<!-- ====================================FAQ============================== -->
 
 <ul class="accordion">
+
+  <h1>Frequently Asked Questions</h1>
   <li>
       <input type="radio" name="accordion" id="first" checked>
       <label for="first">Products</label>
@@ -571,5 +460,131 @@
           </div>
   </li>
 </ul>
-  </body>
-</html>
+
+<!-- ================Blogs=================== -->
+<section id="blog">
+  <!--blog-heading--------------->
+  <div class="blog-heading">
+    <h1>Quantum Leap Blogs</h1>
+  </div>
+
+
+  <!--container---------------->
+  <div class="blog-container">
+
+    <!--box-1------------->
+    <div class="blog-box">
+
+      <!--img---->
+      <div class="blog-img">
+        <img src="image/all-4.jpg" alt="blog">
+      </div>
+      <!--text--->
+      <div class="blog-text">
+        <span>18 July 2021 / Web Design</span>
+        <a href="#" class="blog-title">What Has Happened to All of the Web Design Ideas?</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
+        <a href="#">Read More</a>
+      </div>
+
+    </div>
+
+
+
+
+    <!--box-2------------->
+    <div class="blog-box">
+
+      <!--img---->
+      <div class="blog-img">
+        <img src="image/Quantum leap finance.jpg" alt="blog">
+      </div>
+      <!--text--->
+      <div class="blog-text">
+        <span>18 July 2021 / Web Design</span>
+        <a href="#" class="blog-title">What Has Happened to All of the Web Design Ideas?</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
+        <a href="#">Read More</a>
+      </div>
+
+    </div>
+
+
+
+
+    <!--box-3------------->
+    <div class="blog-box">
+
+      <!--img---->
+      <div class="blog-img">
+        <img src="image/all-3.jpg" alt="blog">
+      </div>
+      <!--text--->
+      <div class="blog-text">
+        <span>18 July 2021 / Web Design</span>
+        <a href="#" class="blog-title">What Has Happened to All of the Web Design Ideas?</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
+        <a href="#">Read More</a>
+      </div>
+
+    </div>
+
+    <!--box-4------------->
+    <div class="blog-box">
+
+      <!--img---->
+      <div class="blog-img">
+        <img src="image/update.jpg" alt="blog">
+      </div>
+      <!--text--->
+      <div class="blog-text">
+        <span>18 July 2021 / Web Design</span>
+        <a href="#" class="blog-title">What Has Happened to All of the Web Design Ideas?</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
+        <a href="#">Read More</a>
+      </div>
+
+    </div>
+
+
+    <!--box-5------------->
+    <div class="blog-box">
+
+      <!--img---->
+      <div class="blog-img">
+        <img src="image/pic-ture.jpg" alt="blog">
+      </div>
+      <!--text--->
+      <div class="blog-text">
+        <span>18 July 2021 / Web Design</span>
+        <a href="#" class="blog-title">What Has Happened to All of the Web Design Ideas?</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
+        <a href="#">Read More</a>
+      </div>
+
+    </div>
+
+
+    <!--box-6------------->
+    <div class="blog-box">
+
+      <!--img---->
+      <div class="blog-img">
+        <img src="image/img-3.jpg" alt="blog">
+      </div>
+      <!--text--->
+      <div class="blog-text">
+        <span>18 July 2021 / Web Design</span>
+        <a href="#" class="blog-title">What Has Happened to All of the Web Design Ideas?</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
+        <a href="#">Read More</a>
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+</body>
+</html> 
