@@ -358,6 +358,13 @@ span{
     width: 100%;
     height: 100vh;
   }
+
+  #testimonials h1{
+    font-size: 40px;
+    font-weight: 800;
+    font-family: sans-serif;
+    margin-top: 30%;
+  }
   
   .testimonial-box-container {
     display: flex;
@@ -365,7 +372,7 @@ span{
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 20%;
+    margin-top: 4%;
   }
   
   .testimonial-box {
@@ -481,7 +488,7 @@ span{
 }
 .container-slide h1{
    text-align: center;
-    padding-top: 10%;
+    padding-top: 20%;
     margin-bottom: 60px;
     font-weight: 800;
     position: relative;
