@@ -688,22 +688,18 @@ input[type="radio"]{
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
   }
-  .blog-text{
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-  }
   .blog-text span{
     color: blue;
     font-size: 0.9rem;
   }
-  .h-text{
-    font-size: 15px;
-  }
-  .blog-text a{
+  .blog-text h3{
+    font-size: 1.3rem;
     font-weight: 500;
     color: #272727;
-    text-decoration: none;
+  }
+  .blog-text h5{
+    font-size: 15px;
+    font-weight: 400;
   }
   .blog-text p{
     color: #9b9b9b;
@@ -718,12 +714,14 @@ input[type="radio"]{
   .blog-text{
     color: #0f0f0f;
     text-decoration: none;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
   }
   .blog-text a:hover{
     color: blue;
     transition: all ease 0.3s;
   }
-  
   
   @media(max-width:1250px){
   
