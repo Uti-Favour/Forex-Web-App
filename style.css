@@ -630,7 +630,7 @@ input[type="radio"]{
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     width: 100%;
     height: 100vh;
-    margin-top: 30%;
+    margin-top: 55%;
   }
   .blog-heading{
     display: flex;
@@ -744,4 +744,76 @@ input[type="radio"]{
         padding:20px;
     }
   }
+  /* ============================newslettter======================== */
+  .contents {
+    text-align: center;
+    padding: 60px 40px;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    margin-top: 10%;
+    border-radius: 30px;
+   
+  }
   
+.contents h1 {
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+}
+
+.contents p {
+  color: gray;
+  margin-top: 15px;
+  line-height: 23px;
+}
+.newsletter-info {
+  max-width: 1000px; /* Set the desired maximum width */
+  margin: 20px auto; /* Center the paragraph horizontally */
+}
+
+.form {
+  padding: 20px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 50%;
+}
+
+.form-btn {
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 20px 25px;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-weight: 500;
+  position: relative;
+  right: 20px;
+  border: none;
+}
+
+.form-btn:hover {
+  color: white;
+  background: gray;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  color: white;
+  display: flex;
+  gap: 40px;
+  font-size: 25px;
+}
+
+.newsletter-section {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form {
+  margin-right: 10px;
+}
