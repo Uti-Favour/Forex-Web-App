@@ -11,23 +11,25 @@
      <link rel="stylesheet" href="script.js">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li>Blogs</li>
-      <li>Live Market</li>
-      <li>Course</li>
-      <li>Pricing</li>
-    </ul>
-  </nav>
     <div class="main-container">
         <div class="text">
             <h1>Advanced Africa Trading and<br>
-                <span> Hedge Fund Platfrom</span></h1>
+                <span class="auto-type" > Hedge Fund Platfrom</span></h1>
                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit adipisicing elit.<br>
                      Vel alias doloribus reprehenderit aut minima soluta adipisicing elit<br>
                      exercitationem similique! Iste, adipisicing elit totam sed amet?
                     </p>
         </div>
+
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed(".auto-type",{
+                strings:["DESIGNER","TRADER","COACH"],
+                typeSpeed:150,
+                backSpeed:150,
+                loop:true
+            })
+        </script>
 
         <button class="btn-1">Join Us      <i class="fa fa-arrow-right" aria-hidden="true"></i>
 
